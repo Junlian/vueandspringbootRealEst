@@ -1,0 +1,122 @@
+Real Estate Backend Setup Guide
+=============================
+
+Prerequisites
+------------
+- Java 17 or higher
+- Maven
+- MongoDB (running on port 27017)
+- MySQL (running on port 3306)
+
+Database Setup
+-------------
+1. MongoDB:
+   - Create a database named 'real_estate'
+   - Install Node.js dependencies and run the setup script:
+     ```
+     npm install
+     npm run setup-db
+     ```
+
+2. MySQL:
+   - Create a database named 'real_estate':     ```sql
+     CREATE DATABASE real_estate;     ```
+   - Run the MySQL setup script:
+     ```
+     npm run setup-mysql
+     ```
+   - Default credentials (can be modified in application.yml):
+     - Username: root
+     - Password: 1234
+
+Project Structure
+---------------
+/src/main/java/com/example/realestate
+├── config/         # Configuration classes
+├── controller/     # REST controllers
+├── dto/           # Data Transfer Objects
+├── exception/     # Custom exceptions and handlers
+├── mapper/        # Object mappers
+├── model/         # Entity classes
+│   ├── mongodb/   # MongoDB entities
+│   └── mysql/     # MySQL entities
+├── repository/    # Data repositories
+└── service/       # Business logic
+    └── search/    # Search related services
+
+Key Dependencies
+--------------
+- Spring Boot 3.2.2
+- Spring Data MongoDB
+- Spring Data JPA
+- MySQL Connector
+- Lombok
+- Spring Validation
+
+Configuration
+------------
+1. Application properties (src/main/resources/application.yml):
+   - MongoDB connection: mongodb://localhost:27017/real_estate
+   - MySQL connection: jdbc:mysql://localhost:3306/real_estate
+   - Server port: 8089 (can be overridden with SERVER_PORT environment variable)
+
+2. Cross-Origin Resource Sharing (CORS):
+   - Currently configured for frontend at http://localhost:5173
+
+Development
+----------
+1. Start MongoDB service
+2. Start MySQL service
+3. Run the application:   ```
+   mvn spring-boot:run   ```
+
+API Endpoints
+-----------
+Properties:
+- GET    /api/properties         - Search properties
+- GET    /api/properties/{id}    - Get property by ID
+- POST   /api/properties         - Create new property
+- PUT    /api/properties/{id}    - Update property
+- DELETE /api/properties/{id}    - Delete property
+
+Search Parameters
+---------------
+- minPrice: Minimum price
+- maxPrice: Maximum price
+- location: Property location
+- type: Property type (sale/rent)
+- page: Page number
+- size: Page size
+- sortBy: Sort field
+- sortDirection: Sort direction (asc/desc)
+
+Building for Production
+---------------------
+1. Build the JAR file:   ```
+   mvn clean package   ```
+2. Run the JAR:   ```
+   java -jar target/real-estate-api-0.0.1-SNAPSHOT.jar   ```
+
+Troubleshooting
+-------------
+1. Database Connection Issues:
+   - Verify MongoDB is running: mongodb://localhost:27017
+   - Verify MySQL is running: localhost:3306
+   - Check credentials in application.yml
+
+2. Port Conflicts:
+   - Ensure port 8089 is available
+   - Modify server.port in application.yml if needed
+
+3. Java Version:
+   - Ensure JAVA_HOME points to Java 17 or higher
+   - Verify Java version: java -version
+
+Additional Notes
+--------------
+- Uses MongoDB for property data storage
+- Uses MySQL for user management
+- Implements RESTful API principles
+- Includes global exception handling
+- Supports pagination and sorting
+- Includes flexible search functionality 

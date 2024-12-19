@@ -1,0 +1,12 @@
+{
+  "name": "real-estate-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "setup-db": "node scripts/setup-db.js",
+    "setup-mysql": "mysql -u root -p1234 < scripts/mysql-setup.sql"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "real-estate-backend": "file:"
+  }
+}

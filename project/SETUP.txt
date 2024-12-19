@@ -1,0 +1,56 @@
+Real Estate Project Setup Guide
+=============================
+
+Prerequisites
+------------
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
+
+Initial Setup
+------------
+1. Clone the repository
+2. Install dependencies:   ```
+   npm install   ```
+   or   ```
+   yarn   ```
+
+Project Structure
+---------------
+/src
+├── assets/         # Static assets like images
+├── components/     # Vue components
+│   ├── auth/       # Authentication related components
+│   ├── common/     # Reusable components
+│   ├── layout/     # Layout components
+│   └── property/   # Property related components
+├── composables/    # Vue composables (hooks)
+├── data/          # Mock data
+├── pages/         # Page components
+├── router/        # Vue Router configuration
+├── services/      # API services
+├── stores/        # Pinia stores
+├── types/         # TypeScript type definitions
+└── style.css      # Global styles
+
+Key Dependencies
+--------------
+- Vue 3
+- TypeScript
+- Pinia (State Management)
+- Vue Router
+- Element Plus (UI Components)
+- Axios (HTTP Client)
+
+Development
+----------
+1. Start development server:   ```
+   npm run dev   ```
+   or   ```
+   yarn dev   ```
+
+2. Access the application at: http://localhost:5173
+
+Environment Setup
+---------------
+Create a .env file in the project root with: 

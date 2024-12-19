@@ -1,0 +1,16 @@
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\repository\UserRepository.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\service\search\PropertySearchService.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\dto\SearchCriteriaDTO.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\exception\PropertyNotFoundException.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\RealEstateApplication.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\controller\HomeController.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\config\WebConfig.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\dto\PropertyDTO.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\config\MongoConfig.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\exception\GlobalExceptionHandler.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\model\mongodb\Property.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\repository\PropertyRepository.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\controller\PropertyController.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\model\mysql\User.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\service\PropertyService.java
+D:\laizi360xiazai\project-bolt-sb1-ur7emzlzVueSpringboot\project\backend\src\main\java\com\example\realestate\mapper\PropertyMapper.java
